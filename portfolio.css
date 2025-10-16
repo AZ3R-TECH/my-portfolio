@@ -320,7 +320,9 @@ nav{
 .service-sect .service-card{
     margin: auto;
     display: grid;
+
     grid-template-columns: repeat(auto-fit, minmax(400px) 1fr);
+
     gap: 2em;
     justify-content: center;
     padding-top: 3rem;
@@ -334,12 +336,83 @@ nav{
     opacity: 0.5;
     padding: 20px;
 }
- footer{
-    background-color: black;
+.contact{
+    background-color: black; 
+    text-align: center;
+    padding: 10rem;
+}
+.comtact-form{
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    align-items: center;
     padding: 20px;
 }
-@media (max-width: 544px) {
-    .copyright{
-        font-size: 0.5em;
+.input{
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+    border: none;
+    font-size: 1em;
+    border-bottom: 1px solid white;
+    margin-bottom: 7px;
+}
+.user-message{
+    height: 10rem;
+    width: 50%;
+    background-color: black;
+    border: none;
+    border-bottom: 1px  solid white;
+    padding: 20px;
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+.form-btn{
+    padding: 10px 45px;
+    background-color: #122231;
+    border: none;
+    font-size: 1em;
+    font-weight: 400;
+    
+}
+.contact h1{
+    margin-bottom: 10x;
+    margin-bottom: 80px;
+    font-size: 3em;
+    text-align: center;
+}
+@media (max-width: 1170px) {
+    .contact{
+       text-align: start;
+       padding: 5rem; 
+    }
+    .input{
+        width: 100%;
+    }
+    .user-message{
+        width: 100%;
+    }
+    .form-btn{
+        text-align: center;
+    }
+}
+@media (max-width: 565px) {
+    .contact{
+        padding: 2rem;
+    }
+    .contact h1{
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+}
+footer{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 548px) {
+    footer{
+        flex-direction: column;
     }
 }
